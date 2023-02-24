@@ -1,0 +1,15 @@
+.tab {
+    display: inline-block;
+    margin-left: 500px;
+}
+.yy{
+text-align: center;
+width: 30%;
+position: relative;
+left:35%;
+border-width:7.5px;
+border-style:inset;
+border-color:DodgerBlue
+}
+input:hover{
+background-color:blanchedalmond;

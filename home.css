@@ -1,0 +1,40 @@
+body   
+{  
+height: 125vh;  
+margin-top: 80px;  
+padding: 30px;  
+background-size: cover;  
+font-family: sans-serif; 
+background-image: url("b.jpeg");
+background-repeat:repeat-x ; 
+}  
+header {  
+background-color: rgb(255, 194, 71);  
+
+position: fixed;  
+left: 250px;  
+right: 300px;  
+top: 45px;  
+height: 30px;  
+display: flex;  
+align-items: center;  
+box-shadow: 0 0 25px 0 black;  
+}  
+header * {  
+display: inline;  
+}  
+header li {  
+margin: 20px;  
+}  
+header li a {  
+color: darkblue;  
+text-decoration: none;  
+}  
+header li :hover{
+	background-color: whitesmoke;
+   
+}
+.t1{
+	margin-left: 500px;
+  
+}
