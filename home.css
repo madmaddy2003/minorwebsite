@@ -8,6 +8,7 @@ font-family: sans-serif;
 background-image: url("b.jpeg");
 background-repeat:repeat-x ; 
 background-image: url(img/home1.jpg);
+background-attachment: fixed;
 
 }  
 
@@ -17,7 +18,7 @@ a {
     color: #000;
 }
 a:hover {
-    color: rgb(179, 179, 179);
+    color: rgb(243, 228, 10);
 }
 .site_header {
     border-bottom: 1px solid #ccc;
@@ -42,7 +43,7 @@ a:hover {
 }
 .bmi_box{
 	width:400px;
-	height: 550px;
+	height: 500px;
 	left: 50%;
 	top: 50%;
 	transform: translate(20%);
@@ -54,10 +55,14 @@ a:hover {
 }
 
 .bmi_box .t1{
+    padding-top: 20%;
 	display: flex;
-	font-size: large;
+	font-size: xx-large;
 	font-weight: 600;
 	justify-content: center;
 	align-items: center;
 	
+}
+#bm:hover {
+    color: rgb(238, 13, 13);
 }
