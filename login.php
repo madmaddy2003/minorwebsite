@@ -1,16 +1,35 @@
 <?php
-include("connection.php");
-$uname=$_POST['username'];
-$pass=$_POST['password'];
-$sql="select*from login where username='$uname' and password='$pass'";
-$result=mysqli_query($con,$sql);
-$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-$count=mysqli_num_rows($result);
-if($count==1)
-{
-    echo"<h1><center> login successful </center><h1>";
-}
-else{
-    echo"<h1> login failed.please enter valid username and password.</h1>";
-}
+session_start();
+   include("connection.php");
+   include("functions.php");
+
+
+   if($_SERVER['REQUEST_METHOD']=="POST")
+   {
+       $user_name=$_POST['username'];
+       $password=$_POST['password'];
+       if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+       {
+          $query="select *from login where user_name='$user_name' limit 1";
+          $result=mysqli_query($con,$query);
+          if($result)
+          {
+          	if($result && mysqli_num_rows($result)>0)
+		    {
+			 $user_data=mysqli_fetch_assoc($result);
+			 if($user_data['password'] === $password)
+			 {
+			 	$_SESSION['user_id'] = $user_data['user_id'];
+			 	header("location:home.html");
+                die;
+			 }
+		    }
+          }
+          echo "please enter valid username and password";
+       }
+       else
+       {
+       	echo "please enter valid username and password";
+       }
+   }
 ?>

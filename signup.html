@@ -10,12 +10,10 @@
 <body>
 	
 	<br><br><br><br><br><br><br>
-<form name="myform" action="" method="GET">
+<form name="myform" action="signup.php" method="POST">
 <div class="yy">
-<span class="tab"></span> <b>FirstName :</b>  
-<input type="text" id="firstname" placeholder="firstname" ><br><br>
-<span class="tab"></span> <b>LastName :</b>  
-<input type="number" id="lastname" placeholder="lastname"><br><br>
+<span class="tab"></span> <b>UserName :</b>  
+<input type="text" id="firstname" placeholder="firstname" name="username"><br><br>
 <span class="tab"></span> <b>Gender :</b>  
 <input type="text" id="gender" placeholder="gender"><br><br>
 <span class="tab"></span> <b>Age :</b>  
@@ -25,10 +23,11 @@
 <span class="tab"></span> <b>Weight :</b>  
 <input type="text" id="Weight" placeholder="weight in kg"><br><br>
 <span class="tab"></span> <b>password :</b>
-<input type="text" id="password" placeholder="*******"><br><br>
+<input type="text" id="password" placeholder="*******" name="password"><br><br>
 <span class="tab"></span> <b>confirm password :</b>
 <input type="text" id="confirm" placeholder="********"><br><br>
-<span class="tab"></span> <input type="button" name="butt" value="sign up" onclick="signup()">
+<span class="tab"></span> <input type="submit" name="butt" value="signup" onclick="signup()"><br><br>
+<a href="login.html">aldready have an account</a>
 </div> 
 </form>
 </body>
