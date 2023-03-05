@@ -7,10 +7,10 @@ text-align: center;
 width: 30%;
 position: relative;
 left:35%;
-border-width:7.5px;
+border-width:5px;
 border-style:inset;
-border-color:DodgerBlue
+border-color:rgb(9, 10, 10)
 }
 input:hover{
-background-color:greenyellow;
+background-color:rgb(243, 237, 208);
 }

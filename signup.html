@@ -5,23 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>sign up</title>
 	<link rel="stylesheet" type="text/css" href="sign.css"/>
+	<script src="login.js"></script>
 </head>
 <body>
+	
 	<br><br><br><br><br><br><br>
 <form name="myform" action="" method="GET">
 <div class="yy">
 <span class="tab"></span> <b>FirstName :</b>  
-<input type="text" id="firstname" ><br><br>
+<input type="text" id="firstname" placeholder="firstname" ><br><br>
 <span class="tab"></span> <b>LastName :</b>  
-<input type="number" id="lastname"><br><br>
+<input type="number" id="lastname" placeholder="lastname"><br><br>
 <span class="tab"></span> <b>Gender :</b>  
-<input type="text" id="gender" ><br><br>
+<input type="text" id="gender" placeholder="gender"><br><br>
 <span class="tab"></span> <b>Age :</b>  
-<input type="text" id="age" ><br><br>
+<input type="text" id="age" placeholder="age in years" ><br><br>
 <span class="tab"></span> <b>Height :</b>  
-<input type="text" id="height" ><br><br>
+<input type="text" id="height" placeholder="height in cm"><br><br>
 <span class="tab"></span> <b>Weight :</b>  
-<input type="text" id="Weight" ><br><br>
+<input type="text" id="Weight" placeholder="weight in kg"><br><br>
+<span class="tab"></span> <b>password :</b>
+<input type="text" id="password" placeholder="*******"><br><br>
+<span class="tab"></span> <b>confirm password :</b>
+<input type="text" id="confirm" placeholder="********"><br><br>
 <span class="tab"></span> <input type="button" name="butt" value="sign up" onclick="signup()">
 </div> 
 </form>

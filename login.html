@@ -5,16 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>log in</title>
 	<link rel="stylesheet" type="text/css" href="log.css"/>
+	<script src="login.js"></script>
+	<script src="validation.js"></script>
 </head>
 <body>
+	
 	<br><br><br><br><br><br><br>
-<form name="myform" action="" method="GET">
+<form name="logform" action="login.php" method="post" onsubmit="return validation()">
 <div class="yy">
 <span class="tab"></span> <b>USERNAME :</b>  
-<input type="text" id="name" ><br><br>
+<input type="text" id="username" placeholder="username" autocomplete name="username"><br><br>
 <span class="tab"></span> <b>PASSWORD :</b>  
-<input type="number" id="password"><br><br>
-<span class="tab"></span> <input type="button" name="butt" value="log in" onclick="login()">
+<input type="password" id="pass" name="password"><br><br>
+<span class="tab"></span><input type="submit" name="butt" value="login" onkeyup="validate()">
+<p id="st">password length should be greater than 6 characters</p>
 </div> 
 </form>
 </body>

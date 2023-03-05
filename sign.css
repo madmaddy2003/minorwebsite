@@ -7,9 +7,9 @@ text-align: center;
 width: 30%;
 position: relative;
 left:35%;
-border-width:7.5px;
+border-width:5px;
 border-style:inset;
-border-color:DodgerBlue
+border-color:rgb(10, 10, 10)
 }
 input:hover{
-background-color:blanchedalmond;
+background-color:blanchedalmond;}
