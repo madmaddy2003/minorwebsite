@@ -23,13 +23,16 @@ session_start();
 			 	header("location:home.html");
                 die;
 			 }
-		    }
-          }
-          echo "please enter valid username and password";
-       }
-       else
-       {
-       	echo "please enter valid username and password";
-       }
+         }
+      }
+      echo "please enter valid username and password";
+   }
+
+else
+{
+       	echo "please enter  username and password ";
+}
+       header("location:login.html");
+                die;
    }
 ?>
